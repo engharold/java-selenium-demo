@@ -1,7 +1,6 @@
 package com.demo.framework;
 
 import com.demo.pages.*;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class PageManager {
@@ -12,8 +11,6 @@ public class PageManager {
     private CheckoutYourInformationPage checkoutYourInformationPage;
     private CheckoutOverviewPage checkoutOverviewPage;
     private CheckoutCompletePage checkoutCompletePage;
-
-    JavascriptExecutor jsExecutor;
 
     public PageManager(WebDriver webDriver) {
         driver = webDriver;

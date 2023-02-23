@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class FrameworkManager {
     static WebDriver driver;
-    public JavascriptExecutor jsExecutor;
+    static JavascriptExecutor jsExecutor;
     static PageManager pageManager;
 
 //    public FrameworkManager() {
