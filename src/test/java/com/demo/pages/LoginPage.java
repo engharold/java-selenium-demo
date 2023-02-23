@@ -1,15 +1,12 @@
 package com.demo.pages;
 
-import com.demo.framework.FrameworkManager;
 import com.demo.framework.PageManager;
 import com.demo.stepdefinitions.CommonSteps;
-import com.microsoft.playwright.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends PageManager {
 
-//    WebDriver driver;
     CommonSteps commonSteps = new CommonSteps();
     By txtUserName = By.xpath("//input[@id='user-name']");
     By txtPassword = By.xpath("//input[@id='password']");

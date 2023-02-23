@@ -1,16 +1,17 @@
 Feature: Product Checkout
 
   Scenario Outline: Product Checkout
-#    Given I am on the application page
-    Given I log in to the application
-#    When I add any product to the cart
-#    And validate that the product was added successfully
-#    And click checkout
-#    And fill the information at checkout page
-#    And validate the product name at Checkout Overview phase
-#    And finish the order
-#    Then the order is completed successfully
+    Given I am on the application page
+    And I log in to the application
+    When I add the product <productName> to the cart
+    And I validate that the product <productName> was added successfully
+    And I click checkout button
+    And I fill the <firstName> <lastName> <zipCode> at Checkout Your Information page
+    And I click continue button
+    And I validate the product <productName> at Checkout Overview page
+    And I finish the order
+    Then the order is completed successfully
 
     Examples:
-      |      product        |
-      | Sauce Labs Backpack |
+      |     productName     | firstName |  lastName  | zipCode |
+      | Sauce Labs Backpack |   Test    | Automation | 123456  |

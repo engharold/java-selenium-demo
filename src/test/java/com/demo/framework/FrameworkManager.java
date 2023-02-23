@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class FrameworkManager {
     static WebDriver driver;
     public JavascriptExecutor jsExecutor;
-    PageManager pageManager;
+    static PageManager pageManager;
 
 //    public FrameworkManager() {
 //        setup();
@@ -23,7 +23,6 @@ public class FrameworkManager {
         driver.manage().window().maximize();
         jsExecutor = (JavascriptExecutor) driver;
         pageManager = new PageManager(driver);
-        driver.get("https://www.saucedemo.com");
     }
 
     public void tearDown() {
